@@ -6,7 +6,7 @@ model.export = {
         max_memory_restart: '500M',
         exec_mode: 'cluster',
         instances: 1,
-        cron_restart: '59 2 * * *',
+        cron_restart: '59 23 * * *',
         env: {
             NODE_ENV : 'development',
         },
