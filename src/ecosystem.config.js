@@ -1,8 +1,9 @@
 module.exports = {
     apps: [{
         name: "server-whatsapp",
-        script: "./app.ts",
-        watch: false, // Asegúrate de que esté escrito correctamente
+        script: "./app.ts", // Cambia esto si tu archivo principal es .js
+        interpreter: "node", // Asegúrate de especificar el intérprete
+        watch: false,
         max_memory_restart: '500M',
         exec_mode: 'cluster',
         instances: 1,
