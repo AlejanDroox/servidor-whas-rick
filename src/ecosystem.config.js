@@ -1,10 +1,12 @@
 module.exports = {
     apps: [{
         name: "server-whatsapp",
-        script: "./app.ts",
-        watch: false, // Asegúrate de que esté escrito correctamente
+        script: "./app.ts", // Apunta al archivo principal de TypeScript
+        interpreter: "ts-node", // Usa ts-node como intérprete
+        watch: false,
         max_memory_restart: '500M',
-
+        exec_mode: 'cluster',
+        instances: 1,
         cron_restart: '59 23 * * *',
         env: {
             NODE_ENV: 'development',
