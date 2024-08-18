@@ -1,10 +1,15 @@
 import { createBot, createFlow, MemoryDB, createProvider} from '@bot-whatsapp/bot'
 
 import { BaileysProvider, handleCtx } from '@bot-whatsapp/provider-baileys'
+
+const sleep = (ms: number): Promise<void> => {
+    return new Promise(resolve => setTimeout(resolve, ms));
+};
+
 const main = async () => {
 
     const provider = createProvider(BaileysProvider)
-
+    await sleep(1500)
     provider.initHttpServer(3005)
 
     provider.http?.server.post('send-message', handleCtx(async (   bot, req, res) => {
