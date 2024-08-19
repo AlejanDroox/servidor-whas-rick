@@ -4,6 +4,8 @@ module.exports = {
         script: "./app.ts", // Apunta al archivo principal de TypeScript
         interpreter: "ts-node", // Usa ts-node como intérprete
         watch: false,
+        exec_mode: 'cluster',
+        instances: 1,
         cron_restart: '59 23 * * *',
         env: {
             NODE_ENV: 'development',
