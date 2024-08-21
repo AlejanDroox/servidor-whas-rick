@@ -1,6 +1,6 @@
 module.exports = {
     apps: [{
-        name: "server-whatsapp",
+        name: "server-whatsapp2",
         script: "./app.ts", // Apunta al archivo principal de TypeScript
         watch: false,
         script: "./app.ts", // Cambia esto si tu archivo principal es .js
