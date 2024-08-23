@@ -9,7 +9,6 @@ module.exports = {
         max_memory_restart: '900M',
         exec_mode: 'cluster',
         instances: 1,
-        cron_restart: '59 23 * * *',
         env: {
             NODE_ENV: 'development',
         },
