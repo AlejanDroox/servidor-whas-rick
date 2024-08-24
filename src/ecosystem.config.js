@@ -3,7 +3,6 @@ module.exports = {
         name: "server-whatsapp",
         script: "./app.ts", // Apunta al archivo principal de TypeScript
         watch: false,
-        interpreter: "/usr/bin/node", // Asegúrate de especificar el intérprete
         max_memory_restart: '900M',
         exec_mode: 'cluster',
         instances: 1,
